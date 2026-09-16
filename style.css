@@ -1,0 +1,24 @@
+:root {
+  --bg-color: rgb(255, 250, 240);
+  --text-color: rgb(30, 40, 50);
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: 'Spectral', serif;
+  font-size: 1.125rem;
+  line-height: 1.7;
+  margin: 0;
+  padding: 2rem 1rem;
+}
+
+h1, h2, h3, h4, h5, h6, nav, button {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+}
+
+.container {
+  max-width: 760px;
+  margin: 0 auto;
+}
