@@ -1,0 +1,7 @@
+title: "My Math Trails"
+author: "Swasti Tiwari"
+description: "Documenting my learning journey, will share relevant stuff."
+
+remote_theme: mahrud/proof
+plugins:
+  - jekyll-remote-theme
