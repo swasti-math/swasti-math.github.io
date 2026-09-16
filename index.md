@@ -1,6 +1,3 @@
 ---
-layout: default
-title: "Home"
+layout: home
 ---
-
-Documenting my learning journey, will share relevant stuff.
