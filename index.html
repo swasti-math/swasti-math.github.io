@@ -8,21 +8,62 @@
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Spectral:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Spectral:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
 
   <!-- Stylesheet -->
   <link rel="stylesheet" href="style.css">
 
-  <!-- JavaScript Setup -->
+  <!-- Scripts -->
   <script src="config_tex.js"></script>
   <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 <body>
-  <div class="container">
-    <h1>My Math Trails</h1>
-    <p>Documenting my learning journey, sharing math insights, and exploring interesting problems.</p>
-    
-    <p>Test inline math: $E = mc^2$</p>
-  </div>
+
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="#" class="logo">My Math Trails</a>
+      <nav class="nav-links">
+        <a href="#about">About</a>
+        <a href="#topics">Topics</a>
+        <a href="#archive">Archive</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h1>My Math Trails</h1>
+      <p class="subtitle">Documenting my learning journey, sharing math insights, and exploring interesting problems.</p>
+      <p class="math-sample">Featured theorem: \( e^{i\pi} + 1 = 0 \)</p>
+    </section>
+
+    <hr class="divider">
+
+    <section id="topics" class="section">
+      <h2>Explorations</h2>
+      <div class="card-grid">
+        <article class="card">
+          <span class="tag">Linear Algebra</span>
+          <h3>Understanding Eigenvalues</h3>
+          <p>A visual geometric intuition behind linear transformations and eigenvectors.</p>
+          <a href="#" class="read-more">Read notes &rarr;</a>
+        </article>
+
+        <article class="card">
+          <span class="tag">Calculus</span>
+          <h3>Delta-Epsilon Proofs</h3>
+          <p>Breaking down formal limit definitions into manageable logical steps.</p>
+          <a href="#" class="read-more">Read notes &rarr;</a>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 Swasti Tiwari. Built manually with HTML, CSS, & MathJax.</p>
+    </div>
+  </footer>
+
 </body>
 </html>
