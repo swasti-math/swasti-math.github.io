@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Swasti's Math Explorations</title>
+
+  <!-- 1. Font Preconnects -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Spectral:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+  <!-- 2. Local CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- 3. KaTeX CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" crossorigin="anonymous">
+
+  <!-- 4. KaTeX JS & Auto-render Extension -->
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" crossorigin="anonymous"></script>
+
+  <!-- 5. Marked.js for Markdown parsing -->
+  <script 
+    src="https://cdn.jsdelivr.net/npm/marked@12.0.0/marked.min.js" 
+    integrity="sha384-NNQgBjjuhtXzPmmy4gurS5X7P4uTt1DThyevz4Ua0IVK5+kazYQI1W27JHjbbxQz" 
+    crossorigin="anonymous">
+  </script>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header>
+    <nav class="navbar container">
+      <p class="nav-quote">"Pure mathematics is, in its way, the poetry of logical ideas." &mdash; Albert Einstein</p>
+    </nav>
+  </header>
+
+  <main class="container">
+    
+    <!-- VIEW 1: HOME PAGE (Grid of posts) -->
+    <div id="homeView">
+      <section class="hero">
+        <h1>Swasti's Math Explorations</h1>
+        <p>Explorations in high school Math and more.</p>
+      </section>
+
+      <!-- Search & Tag Filter -->
+      <section class="controls">
+        <input type="text" id="searchInput" placeholder="Search articles..." aria-label="Search">
+        
+        <!-- Smooth Auto-Scrolling Tag Marquee -->
+        <div class="marquee-wrapper" id="marqueeWrapper">
+          <div class="tags-container" id="tagFilters">
+            <!-- Tag buttons loaded dynamically from tags.json via JS -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Post Cards Container (Populated dynamically via JS) -->
+      <section class="posts-grid" id="postsContainer"></section>
+    </div>
+
+    <!-- VIEW 2: SINGLE POST PAGE (Hidden by default) -->
+    <div id="postView" style="display: none;">
+      <a href="#" class="back-link">&larr; Back to all articles</a>
+      
+      <article class="article-container" id="articleContainer">
+        <!-- Post content dynamically rendered here -->
+      </article>
+    </div>
+
+  </main>
+
+  <footer class="site-footer">
+    <p class="footer-copyright"><strong>&copy; 2026 Swasti Tiwari</strong></p>
+    <p class="footer-credits">Built with HTML, CSS, JS &amp; KaTeX.</p>
+  </footer>
+
+  <!-- Load Dedicated Tag Module -->
+<script src="assets/js/tags.js"></script>
+  
+  <!-- Main JavaScript File -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
