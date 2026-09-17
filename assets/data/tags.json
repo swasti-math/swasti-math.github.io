@@ -1,0 +1,13 @@
+[
+  { "id": "algebra", "label": "Algebra" },
+  { "id": "number-theory", "label": "Number Theory" },
+  { "id": "geometry", "label": "Geometry" },
+  { "id": "combinatorics", "label": "Combinatorics" },
+  { "id": "ioqm", "label": "IOQM" },
+  { "id": "rmo", "label": "RMO" },
+  { "id": "inmo", "label": "INMO" },
+  { "id": "aime", "label": "AIME" },
+  { "id": "other_pyqs", "label": "Other PYQs" },
+  { "id": "notmath", "label": "≠ Math"}
+]
+
