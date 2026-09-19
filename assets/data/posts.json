@@ -1,5 +1,6 @@
 [
   {
+    "sno": "0001",
     "id": "1998_rmo_q1",
     "title": "Can you see the invisible circle?",
     "date": "2026-09-17",
@@ -7,6 +8,7 @@
     "tags": ["geometry","rmo"],
     "pinned": false,
     "excerpt": "An old RMO problem where finding for an invisible circle solves it instantly.",
-    "file": "posts/001_1998_rmo_q1.md"
+    "type": "md",
+    "file": "posts/0001/001_1998_rmo_q1.md"
   }
 ]
