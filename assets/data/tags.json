@@ -8,6 +8,7 @@
   { "id": "inmo", "label": "INMO" },
   { "id": "aime", "label": "AIME" },
   { "id": "other_pyqs", "label": "Other PYQs" },
+  { "id": "moremath", "label": "More Math" },
+  { "id": "mathematicans", "label": "Mathematicians" },
   { "id": "notmath", "label": "≠ Math"}
 ]
-
