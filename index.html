@@ -45,6 +45,14 @@
         <p>Explorations in high school Math and more.</p>
       </section>
 
+      <!-- Right-Aligned Site Navigation Bar -->
+      <nav class="site-nav" aria-label="Main Navigation">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#resources" class="nav-link">Resources</a>
+        <a href="#archive" class="nav-link">Archive View</a>
+        <a href="#contact" class="nav-link">Contact Me</a>
+      </nav>
+
       <!-- Search & Tag Filter -->
       <section class="controls">
         <input type="text" id="searchInput" placeholder="Search articles..." aria-label="Search">
@@ -70,6 +78,66 @@
       </article>
     </div>
 
+    <!-- VIEW 3: ARCHIVE VIEW -->
+    <div id="archiveView" style="display: none;">
+      <a href="#" class="back-link">&larr; Back to all articles</a>
+      
+      <section class="archive-header">
+        <h2>Article Archive</h2>
+        <p>Browse all published explorations by sequence, timeline, or topic.</p>
+        
+        <!-- Sub-View Toggle Buttons -->
+        <div class="archive-tabs" id="archiveTabs">
+          <button class="archive-tab-btn active" data-view="sequential">Sequential View</button>
+          <button class="archive-tab-btn" data-view="chronological">Chronological View</button>
+          <button class="archive-tab-btn" data-view="topic">Topic-Based View</button>
+        </div>
+      </section>
+
+      <div class="archive-container" id="archiveContainer">
+        <!-- Rendered dynamically via JS based on selected sub-view -->
+      </div>
+    </div>
+
+    <!-- VIEW 4: ABOUT VIEW -->
+    <div id="aboutView" style="display: none;">
+      <a href="#" class="back-link">&larr; Back to all articles</a>
+      <section class="static-page">
+        <h2>About</h2>
+        <p>Welcome to my mathematical notebook where I document problem sets, Olympiad preparation notes, and theoretical explorations in high school mathematics and beyond.</p>
+      </section>
+    </div>
+
+    <!-- VIEW 5: RESOURCES VIEW -->
+    <div id="resourcesView" style="display: none;">
+      <a href="#" class="back-link">&larr; Back to all articles</a>
+      <section class="static-page">
+        <h2>Resources</h2>
+        <!-- <p>A curated collection of recommended mathematical textbooks, competition problem archives, and useful online learning materials.</p> -->
+        <div class="resources-container" id="resourcesContainer" style="margin-top: 2rem;">
+          <!-- Resources rendered dynamically via JS -->
+        </div>
+      </section>
+    </div>
+
+    <!-- VIEW 6: CONTACT VIEW -->
+    <div id="contactView" style="display: none;">
+      <a href="#" class="back-link">&larr; Back to all articles</a>
+      <section class="static-page">
+        <div class="form-container">
+          <iframe 
+            id="googleFormIframe"
+            src="https://docs.google.com/forms/d/e/1FAIpQLSe7xTbH8qujheFJD2ca8vi-kS979UofRTAlcdGRCZjyJPQtLA/viewform?embedded=true" 
+            width="100%" 
+            height="700" 
+            frameborder="0" 
+            style="border: none; border-radius: 8px;">
+            Loading…
+          </iframe>
+        </div>
+      </section>
+    </div>
+
   </main>
 
   <footer class="site-footer">
@@ -78,7 +146,7 @@
   </footer>
 
   <!-- Load Dedicated Tag Module -->
-<script src="assets/js/tags.js"></script>
+  <script src="assets/js/tags.js"></script>
   
   <!-- Main JavaScript File -->
   <script src="assets/js/main.js"></script>
