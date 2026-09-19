@@ -1,0 +1,111 @@
+[
+  {
+    "id": "res-001",
+    "title": "Math Olympiad Training Program Page (IISER Bhopal)",
+    "author": "Dr. Jyoti Prakash Saha",
+    "category": "Portals & Archives",
+    "description": "Rich source of problems from various national/international Math olympiads/competitions with their detailed solutions including walk throughs.",
+    "link": "https://jpsaha.github.io/MOTP/",
+    "badge": "Recommended"
+  },
+  {
+    "id": "res-002",
+    "title": "ISI Kolkata RMO page",
+    "author": "",
+    "category": "Portals & Archives",
+    "description": "Useful reference of books/handouts/lecture notes. Also includes previous year RMO/INMO question papers since 1989-90.",
+    "link": "https://www.isical.ac.in/~rmo/resources.html",
+    "badge": ""
+  },
+  {
+    "id": "res-003",
+    "title": "AoPS Online Resources",
+    "author": "Art of Problem Solving",
+    "category": "Portals & Archives",
+    "description": "Comprehensive wiki and problem database for AMC, AIME, USAMO, and IMO preparation.",
+    "link": "https://artofproblemsolving.com/community/c13_contests",
+    "badge": ""
+  },
+  {
+    "id": "res-004",
+    "title": "Desmos Graphing Calculator",
+    "author": "",
+    "category": "Web-based Computer Programs",
+    "description": "To plot & understand various mathematical functions.",
+    "link": "https://www.desmos.com/calculator",
+    "badge": "Free"
+  },
+  {
+    "id": "res-005",
+    "title": "Geogebra Classic",
+    "author": "",
+    "category": "Web-based Computer Programs",
+    "description": "To draw to the scale figures of Euclidean Geometry using mouse and keyboard.",
+    "link": "https://www.geogebra.org/classic?lang=en",
+    "badge": "Free"
+  },
+  {
+    "id": "res-006",
+    "title": "RoboCompass",
+    "author": "",
+    "category": "Web-based Computer Programs",
+    "description": "To draw geometric construtions step by step using digital ruler and compass (includes step animations).",
+    "link": "https://www.robocompass.com/app",
+    "badge": "Free"
+  },
+  {
+    "id": "res-007",
+    "title": "BlocksCAD",
+    "author": "",
+    "category": "Web-based Computer Programs",
+    "description": "A Block based 3D modeling program.",
+    "link": "https://www.blockscad3d.com/editor/",
+    "badge": "Free"
+  },
+  {
+    "id": "res-008",
+    "title": "Excalidraw Whiteboard",
+    "author": "",
+    "category": "Web-based Computer Programs",
+    "description": "To plot quick, not to scale, concept geometric figures.",
+    "link": "https://excalidraw.com/",
+    "badge": "Free"
+  },
+  {
+    "id": "res-009",
+    "title": "IISER Bhopal Maths Circle",
+    "author": "",
+    "category": "Maths Circles",
+    "description": "",
+    "link": "https://sites.google.com/iiserb.ac.in/math-circle/home",
+    "badge": "Classroom"
+  },
+   {
+    "id": "res-010",
+    "title": "ICTS (TIFR) Maths Circle India",
+    "author": "",
+    "category": "Maths Circles",
+    "description": "",
+    "link": "https://www.icts.res.in/explorations",
+    "badge": "Online"
+  },
+  {
+    "id": "res-011",
+    "title": "Maths Circles, University of Waterloo, Canada",
+    "author": "",
+    "category": "Maths Circles",
+    "description": "",
+    "link": "https://cemc.uwaterloo.ca/workshops/student-workshops/math-circles",
+    "badge": "Classroom / Online"
+  },
+  {
+    "id": "res-012",
+    "title": "Short Math Guide for L<span style=\"font-size:0.85em; vertical-align:0.15em; margin-left:-0.3em; margin-right:-0.15em;\">A</span>T<span style=\"vertical-align:-0.2em; margin-left:-0.16em; margin-right:-0.15em;\">E</span>X",
+    "author": "Michael Downes, updated by Barbara Beeton, American Mathematical Society",
+    "category": "L<span style=\"font-size:0.85em; vertical-align:0.15em; margin-left:-0.3em; margin-right:-0.15em;\">A</span>T<span style=\"vertical-align:-0.2em; margin-left:-0.16em; margin-right:-0.15em;\">E</span>X",
+    "description": "",
+    "link": "https://tug.ctan.org/info/short-math-guide/short-math-guide.pdf",
+    "badge": ""
+  }
+]
+
