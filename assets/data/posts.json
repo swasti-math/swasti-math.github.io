@@ -8,7 +8,21 @@
     "tags": ["geometry","rmo"],
     "pinned": false,
     "excerpt": "An old RMO problem where finding for an invisible circle solves it instantly.",
+    "quesRef": "RMO 1998, Q1",
     "type": "md",
-    "file": "posts/0001/001_1998_rmo_q1.md"
+    "file": "posts/0001/0001_1998_rmo_q1.md"
+  },
+  {
+    "sno": "0002",
+    "id": "1992_inmo_q1",
+    "title": "An angle bisector resulting in similar triangles.",
+    "date": "2026-09-25",
+    "readTime": "5 min read",
+    "tags": ["geometry","inmo"],
+    "pinned": false,
+    "excerpt": "An old INMO problem where an angle bisector results in similar triangles.",
+    "quesRef": "INMO 1992, Q1",
+    "type": "md",
+    "file": "posts/0002/0002_1992_inmo_q1.md"
   }
 ]
