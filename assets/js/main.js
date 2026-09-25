@@ -205,6 +205,10 @@ function renderPostCards(postsToRender) {
       ? `<div style="font-family: 'Nunito', sans-serif; font-weight: bold; font-size: 11pt; color: var(--lColorS2, #666); margin-top: 0.25rem;">${post.sno}</div>` 
       : "";
 
+    const quesRefHTML = post.quesRef
+      ? `<div class="post-ques-ref" style="font-family: var(--font-secondary); font-size: 0.85rem; font-weight: 600; color: var(--lColorT1); margin-top: 0.2rem;">${post.quesRef}</div>`
+      : "";
+
     card.innerHTML = `
       <div class="card-header">
         <div class="tags-wrapper">${pinnedHTML}${tagsHTML}</div>
@@ -214,6 +218,7 @@ function renderPostCards(postsToRender) {
       <h2><a href="#post/${post.id}">${post.title}</a></h2>
       <p class="date">${post.date || ""}</p>
       <p class="excerpt">${post.excerpt || ""}</p>
+      ${quesRefHTML}
       <a href="#post/${post.id}" class="read-more">Read Article &rarr;</a>
     `;
     postsContainer.appendChild(card);
@@ -314,9 +319,11 @@ function renderArchive(posts, mode = "sequential") {
     html = `<ul class="archive-list">`;
     sorted.forEach(post => {
       const snoBadge = post.sno ? `<strong style="font-family: 'Nunito', sans-serif;font-size: 12pt; color: var(--lColorS2); margin-right: 0.5rem;">[${post.sno}]</strong>` : "";
+      const quesRefHTML = post.quesRef ? `<span class="archive-ques-ref" style="font-family: var(--font-secondary); font-size: 0.85rem; font-weight: 600; color: var(--lColorT1); opacity: 0.9;"> (${post.quesRef})</span>` : "";
+
       html += `
         <li class="archive-item">
-          <a href="#post/${post.id}" class="archive-item-title">${snoBadge}${post.title}</a>
+          <a href="#post/${post.id}" class="archive-item-title">${snoBadge}${post.title}${quesRefHTML}</a>
           <span class="archive-item-meta">${post.date || ""}</span>
         </li>
       `;
@@ -367,9 +374,11 @@ function renderArchive(posts, mode = "sequential") {
 
       group.posts.forEach(post => {
         const snoBadge = post.sno ? `<strong style="font-family: 'Nunito', sans-serif;font-size: 12pt; color: var(--lColorS2); margin-right: 0.5rem;">[${post.sno}]</strong>` : "";
+        const quesRefHTML = post.quesRef ? `<span class="archive-ques-ref" style="font-family: var(--font-secondary); font-size: 0.85rem; font-weight: 600; color: var(--lColorT1); opacity: 0.9;"> (${post.quesRef})</span>` : "";
+
         html += `
           <li class="archive-item">
-            <a href="#post/${post.id}" class="archive-item-title">${snoBadge}${post.title}</a>
+            <a href="#post/${post.id}" class="archive-item-title">${snoBadge}${post.title}${quesRefHTML}</a>
             <span class="archive-item-meta">${post.date || post.readTime || ""}</span>
           </li>
         `;
@@ -400,9 +409,11 @@ function renderArchive(posts, mode = "sequential") {
       `;
       grouped[topic].forEach(post => {
         const snoBadge = post.sno ? `<strong style="font-family: 'Nunito', sans-serif;font-size: 12pt; color: var(--lColorS2); margin-right: 0.5rem;">[${post.sno}]</strong>` : "";
+        const quesRefHTML = post.quesRef ? `<span class="archive-ques-ref" style="font-family: var(--font-secondary); font-size: 0.85rem; font-weight: 600; color: var(--lColorT1); opacity: 0.9;"> (${post.quesRef})</span>` : "";
+
         html += `
           <li class="archive-item">
-            <a href="#post/${post.id}" class="archive-item-title">${snoBadge}${post.title}</a>
+            <a href="#post/${post.id}" class="archive-item-title">${snoBadge}${post.title}${quesRefHTML}</a>
             <span class="archive-item-meta">${post.date || ""}</span>
           </li>
         `;
@@ -520,6 +531,7 @@ window.filterPosts = function filterPosts() {
       (post.sno?.toLowerCase().includes(searchTerm) ?? false) ||
       (post.title?.toLowerCase().includes(searchTerm) ?? false) || 
       (post.excerpt?.toLowerCase().includes(searchTerm) ?? false) ||
+      (post.quesRef?.toLowerCase().includes(searchTerm) ?? false) ||
       (Array.isArray(post.tags) && post.tags.some(t => t.toLowerCase().includes(searchTerm)));
 
     return matchesTag && matchesSearch;
