@@ -43,27 +43,26 @@ body {
   display: flex;
   flex-direction: column;
 
-  /* OPTION 1: SUBTLE MATH GRID PATTERN */
-  background-color: var(--lColorBG);
+  /* SUBTLE MATH GRID PATTERN */
   background-image: 
-    linear-gradient(to right, rgba(11,66,79, 0.08) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(139,36,25, 0.1) 1px, transparent 1px);
+    linear-gradient(to right, rgba(0, 128, 255, 0.08) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(173, 28, 55, 0.1) 1px, transparent 1px);
   background-size: 36px 36px;
 }
 
-/* Update main container to push away from the footer */
+/* Main container layout */
 main, .main-container {
   flex: 1 0 auto;
-  margin-bottom: 2.5rem; /* Guarantees a minimum gap above the footer */
+  margin-bottom: 2.5rem;
 }
 
-/* Ensure the article view and grid containers respect bottom spacing */
+/* Container bottom spacing */
 .posts-grid,
 .article-container {
   margin-bottom: 1.5rem;
 }
 
-/* Headings default to darkCoral and Spectral font */
+/* Headings */
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-primary);
   color: var(--lColorS1);
@@ -71,7 +70,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.3;
 }
 
-/* UI Elements default to Nunito for crisp readability */
+/* UI Elements */
 button, input, .badge, .tag-btn, nav {
   font-family: var(--font-secondary);
 }
@@ -87,7 +86,7 @@ a:hover {
   color: var(--lColorS2);
 }
 
-/* Security & Layout Containment */
+/* Layout Containment */
 .container {
   max-width: 850px;
   margin: 0 auto;
@@ -144,11 +143,11 @@ header {
 }
 
 .logo-symbol {
-  color: var(--lColorAc); /* Rich Gold for math symbol */
+  color: var(--lColorAc);
   margin-right: 0.25rem;
 }
 
-/* Hero Section (Compact padding to minimize vertical space) */
+/* Hero Section */
 .hero {
   text-align: center;
   padding: 1.5rem 0 0.75rem;
@@ -165,7 +164,7 @@ header {
 }
 
 /* ==========================================================================
-   4. SITE NAVIGATION (Capsule buttons, tight vertical spacing)
+   4. SITE NAVIGATION
    ========================================================================== */
 .site-nav {
   display: flex;
@@ -230,35 +229,6 @@ header {
 #searchInput:focus {
   border-color: var(--lColorT1);
   box-shadow: 0 0 0 3px rgba(11, 66, 79, 0.15);
-}
-
-.tags-container {
-  display: flex;
-  gap: 0.5rem;
-  flex-wrap: wrap;
-}
-
-.tag-btn {
-  background-color: var(--surface-card);
-  border: 1px solid var(--border-subtle);
-  color: var(--lColorP1);
-  padding: 0.4rem 0.9rem;
-  border-radius: 20px;
-  cursor: pointer;
-  font-size: 0.85rem;
-  font-weight: 600;
-  transition: all 0.2s ease;
-}
-
-.tag-btn:hover {
-  border-color: var(--lColorS2);
-  color: var(--lColorS2);
-}
-
-.tag-btn.active {
-  background-color: var(--lColorT1);
-  color: #FFFFFF;
-  border-color: var(--lColorT1);
 }
 
 /* Post Cards */
@@ -348,8 +318,21 @@ header {
 
 .card .excerpt {
   font-size: 1rem;
-  margin-bottom: 1.25rem;
+  margin-bottom: 0.75rem;
   opacity: 0.9;
+}
+
+/* Question Reference Styling (Placed below excerpt) */
+.post-ques-ref,
+.card .post-ques-ref {
+  font-family: var(--font-secondary);
+  font-size: 0.85rem;
+  font-weight: 900;
+  color: var(--lColorP1) !important;
+  text-align: left;
+  margin-top: 0.25rem;
+  margin-bottom: 1rem;
+  line-height: 1.4;
 }
 
 .read-more {
@@ -411,7 +394,6 @@ header {
   padding: 0.4rem;
 }
 
-/* Dual-fading edge gradient mask */
 .marquee-wrapper::before,
 .marquee-wrapper::after {
   content: "";
@@ -433,7 +415,6 @@ header {
   background: linear-gradient(to left, var(--surface-card), transparent);
 }
 
-/* Marquee Motion track */
 .tags-container {
   display: flex;
   gap: 0.5rem;
@@ -441,7 +422,6 @@ header {
   animation: scrollTags 25s linear infinite;
 }
 
-/* Pause scroll when user interacts or hovers */
 .marquee-wrapper:hover .tags-container {
   animation-play-state: paused;
 }
@@ -511,7 +491,7 @@ footer {
 }
 
 /* ==========================================================================
-   ARCHIVE VIEW STYLES
+   5. ARCHIVE VIEW STYLES
    ========================================================================== */
 .archive-header {
   margin-bottom: 2rem;
@@ -529,40 +509,6 @@ footer {
   margin-bottom: 1rem;
 }
 
-.archive-list {
-  list-style: none;
-  padding-left: 0.5rem;
-}
-
-.archive-item {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-  padding: 0.6rem 0;
-  border-bottom: 1px dashed var(--border-subtle);
-}
-
-.archive-item-title {
-  font-weight: 600;
-  color: var(--lColorT1);
-}
-
-.archive-item-title:hover {
-  color: var(--lColorS2);
-}
-
-.archive-item-date {
-  font-family: var(--font-secondary);
-  font-size: 0.85rem;
-  color: var(--lColorP1);
-  opacity: 0.75;
-  white-space: nowrap;
-  margin-left: 1rem;
-}
-
-/* ==========================================================================
-   ARCHIVE SUB-VIEW TABS & LAYOUTS
-   ========================================================================== */
 .archive-tabs {
   display: flex;
   gap: 0.5rem;
@@ -628,7 +574,7 @@ footer {
   color: var(--lColorS2);
 }
 
-.archive-item-meta {
+.archive-item-meta, .archive-item-date {
   font-family: var(--font-secondary);
   font-size: 0.85rem;
   color: var(--lColorP1);
@@ -637,12 +583,20 @@ footer {
   margin-left: 1rem;
 }
 
-/* ==========================================================================
-   MINIMAL ABOUT PAGE STYLES
-   ========================================================================== */
+.archive-ques-ref,
+.archive-item .archive-ques-ref {
+  font-family: var(--font-secondary);
+  font-size: 0.85rem;
+  font-weight: 900;
+  color: var(--lColorP1) !important;
+  opacity: 0.9;
+}
 
+/* ==========================================================================
+   6. MINIMAL ABOUT PAGE STYLES
+   ========================================================================== */
 #aboutView {
-  max-width: 680px; /* Slightly narrower reading measure for better legibility */
+  max-width: 680px;
   margin: 0 auto;
 }
 
@@ -659,7 +613,7 @@ footer {
   line-height: 1.75;
   color: var(--lColorP1);
   margin-bottom: 1.25rem;
-  text-align: justify; /* Justifies the text alignment */
+  text-align: justify;
 }
 
 #aboutView hr {
@@ -675,7 +629,6 @@ footer {
   margin-bottom: 1.25rem;
 }
 
-/* Subtle, unboxed list format */
 #aboutView ul {
   list-style: none;
   padding-left: 0;
@@ -685,7 +638,7 @@ footer {
 #aboutView li {
   margin-bottom: 1.25rem;
   padding-left: 1rem;
-  border-left: 2px solid var(--lColorT1); /* Subtle teal thread on the left */
+  border-left: 2px solid var(--lColorT1);
 }
 
 #aboutView li strong {
