@@ -1,6 +1,6 @@
 [
   {
-    "id": "res-001",
+    "id": "iiserb-motp",
     "title": "Math Olympiad Training Program Page (IISER Bhopal)",
     "author": "Dr. Jyoti Prakash Saha",
     "category": "Portals & Archives",
@@ -9,7 +9,7 @@
     "badge": "Recommended"
   },
   {
-    "id": "res-002",
+    "id": "isik-rmo",
     "title": "ISI Kolkata RMO page",
     "author": "",
     "category": "Portals & Archives",
@@ -18,7 +18,7 @@
     "badge": ""
   },
   {
-    "id": "res-003",
+    "id": "aops",
     "title": "AoPS Online Resources",
     "author": "Art of Problem Solving",
     "category": "Portals & Archives",
@@ -27,7 +27,7 @@
     "badge": ""
   },
   {
-    "id": "res-004",
+    "id": "desmos",
     "title": "Desmos Graphing Calculator",
     "author": "",
     "category": "Web-based Computer Programs",
@@ -36,7 +36,7 @@
     "badge": "Free"
   },
   {
-    "id": "res-005",
+    "id": "geogebra",
     "title": "Geogebra Classic",
     "author": "",
     "category": "Web-based Computer Programs",
@@ -45,7 +45,7 @@
     "badge": "Free"
   },
   {
-    "id": "res-006",
+    "id": "robocompass",
     "title": "RoboCompass",
     "author": "",
     "category": "Web-based Computer Programs",
@@ -54,7 +54,16 @@
     "badge": "Free"
   },
   {
-    "id": "res-007",
+    "id": "mathigon",
+    "title": "Mathigon Polypad",
+    "author": "",
+    "category": "Web-based Computer Programs",
+    "description": "An interactive virtual math playground to explore mathematical concepts using digital manipulatives and visual tools.",
+    "link": "https://polypad.amplify.com/p",
+    "badge": "Free"
+  },
+  {
+    "id": "blockscad",
     "title": "BlocksCAD",
     "author": "",
     "category": "Web-based Computer Programs",
@@ -63,7 +72,7 @@
     "badge": "Free"
   },
   {
-    "id": "res-008",
+    "id": "excalidraw",
     "title": "Excalidraw Whiteboard",
     "author": "",
     "category": "Web-based Computer Programs",
@@ -72,7 +81,7 @@
     "badge": "Free"
   },
   {
-    "id": "res-009",
+    "id": "iiserb-mathc",
     "title": "IISER Bhopal Maths Circle",
     "author": "",
     "category": "Maths Circles",
@@ -81,7 +90,7 @@
     "badge": "Classroom"
   },
    {
-    "id": "res-010",
+    "id": "icts-mathc",
     "title": "ICTS (TIFR) Maths Circle India",
     "author": "",
     "category": "Maths Circles",
@@ -90,7 +99,7 @@
     "badge": "Online"
   },
   {
-    "id": "res-011",
+    "id": "uw-mathc",
     "title": "Maths Circles, University of Waterloo, Canada",
     "author": "",
     "category": "Maths Circles",
@@ -99,7 +108,16 @@
     "badge": "Classroom / Online"
   },
   {
-    "id": "res-012",
+    "id": "ram-mathc",
+    "title": "Raising A Mathematician (RAM), Maths Circle",
+    "author": "",
+    "category": "Maths Circles",
+    "description": "",
+    "link": "https://www.mathscircle.org/",
+    "badge": "Classroom"
+  },
+  {
+    "id": "latex-ams",
     "title": "Short Math Guide for L<span style=\"font-size:0.85em; vertical-align:0.15em; margin-left:-0.3em; margin-right:-0.15em;\">A</span>T<span style=\"vertical-align:-0.2em; margin-left:-0.16em; margin-right:-0.15em;\">E</span>X",
     "author": "Michael Downes, updated by Barbara Beeton, American Mathematical Society",
     "category": "L<span style=\"font-size:0.85em; vertical-align:0.15em; margin-left:-0.3em; margin-right:-0.15em;\">A</span>T<span style=\"vertical-align:-0.2em; margin-left:-0.16em; margin-right:-0.15em;\">E</span>X",
