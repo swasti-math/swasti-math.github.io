@@ -24,5 +24,19 @@
     "quesRef": "INMO 1992, Q1",
     "type": "md",
     "file": "posts/0002/0002_1992_inmo_q1.md"
+  },
+  {
+    "sno": "0003",
+    "id": "2017_rmo_q2",
+    "title": "Comparing Remainders in a Diophantine Equation",
+    "date": "2026-10-05",
+    "readTime": "5 min read",
+    "tags": ["number-theory","rmo"],
+    "pinned": false,
+    "excerpt": "A previous year RMO problem which can be easily solved by comparing remainders.",
+    "quesRef": "RMO 2017, Q2",
+    "type": "md",
+    "file": "posts/0003/0003_2017_rmo_q2.md"
   }
+
 ]
