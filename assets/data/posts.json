@@ -37,6 +37,18 @@
     "quesRef": "RMO 2017, Q2",
     "type": "md",
     "file": "posts/0003/0003_2017_rmo_q2.md"
+  },
+  {
+    "sno": "0004",
+    "id": "2023_rmo_kvjnv_q2",
+    "title": "When Four Consecutive Squares Equals Twice a Prime",
+    "date": "2026-10-07",
+    "readTime": "8 min read",
+    "tags": ["number-theory","rmo"],
+    "pinned": false,
+    "excerpt": "A previous year RMO problem where parity and remainders play a crucial role in proving divisibility. ",
+    "quesRef": "RMO 2023, KV JNV Q2",
+    "type": "md",
+    "file": "posts/0004/0004_2023_rmo_KV_Q2.md"
   }
-
 ]
